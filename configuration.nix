@@ -2,11 +2,11 @@
 {
     imports =
 	[ 
-	    ./hardware-configuration.nix
+	./hardware-configuration.nix
 
-	    # configs
-	    ./packages.nix
-	    ./nvim.nix
+	# configs
+	./packages.nix
+	./nvim.nix
 
 	];
 
@@ -17,6 +17,12 @@
 	device = "/dev/nvme0n1";
     };
 
+    boot.swraid = {
+	enable = true;
+	mdadmConf = ''
+	    ARRAY /dev/md0 metadata=1.2 UUID=e10e4431:f7ba7b1e:59be28db:6f212bf7
+	    '';
+    };
 
     # kernel
     boot.kernelPackages = pkgs.linuxPackages_latest;
@@ -45,7 +51,7 @@
 	    PermitRootLogin = "no"; 
 	};
     };
-    
+
     # docker
     virtualisation.docker.enable = true;
 
