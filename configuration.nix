@@ -21,6 +21,7 @@
 	enable = true;
 	mdadmConf = ''
 	    ARRAY /dev/md0 metadata=1.2 UUID=e10e4431:f7ba7b1e:59be28db:6f212bf7
+	    MAILADDR blairfix@fastmail.com
 	    '';
     };
 
