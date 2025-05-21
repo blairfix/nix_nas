@@ -2,7 +2,6 @@
     environment.systemPackages = with pkgs;  [ 
 
 	# terminal 
-	alacritty 
 	fzf 
 	ripgrep
 	eza
@@ -18,6 +17,8 @@
 	htop 
 	bottom
 	trash-cli 
+	parted
+	mdadm
 
 	# ssh and network
 	openssh 

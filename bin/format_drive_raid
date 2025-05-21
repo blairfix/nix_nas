@@ -1,0 +1,28 @@
+#!/usr/bin/bash
+
+# list drives
+sudo fdisk -l
+
+# enter disk
+echo "--------------------------------"
+read -p 'Enter drive to partition ' drive
+
+# partition standard
+sudo parted "$drive" mklabel gpt
+
+# make partition
+sudo parted -a optimal "$drive" mkpart primary ext4 0% 100%
+
+# list partitions
+lsblk 
+
+# format partition
+read -p 'Partition name: ' name 
+sudo mkfs.ext4 -L "$name" "$drive"1
+
+
+
+
+
+
+
