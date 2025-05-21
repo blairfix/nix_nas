@@ -14,7 +14,7 @@
     boot.loader.grub = {
 	enable = true;
 	useOSProber = true;
-	device = "/dev/sda";
+	device = "/dev/nvme0n1";
     };
 
 
