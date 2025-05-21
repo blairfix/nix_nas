@@ -11,18 +11,12 @@ read -p 'Enter drive to partition ' drive
 sudo parted "$drive" mklabel gpt
 
 # make partition
-sudo parted -a optimal "$drive" mkpart primary ext4 0% 100%
+sudo parted -a optimal "$drive" mkpart primary 0% 100%
+
+
+# set raid on
+sudo parted -s "$drive" set 1 raid on
 
 # list partitions
 lsblk 
-
-# format partition
-read -p 'Partition name: ' name 
-sudo mkfs.ext4 -L "$name" "$drive"1
-
-
-
-
-
-
 
