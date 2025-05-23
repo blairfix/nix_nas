@@ -19,6 +19,7 @@
 	trash-cli 
 	parted
 	mdadm
+	smartmontools
 
 	# ssh and network
 	openssh 
