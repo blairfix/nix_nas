@@ -8,6 +8,9 @@
 	./packages.nix
 	./nvim.nix
 
+	# timers
+	./timers/update.nix
+
 	];
 
     # bootloader
