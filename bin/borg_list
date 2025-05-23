@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+echo "Blair:"
+sudo borg list /nas/borg_blair 
+echo ""
+
+echo "Media:"
+sudo borg list /nas/borg_media
+echo ""
+
+echo "Pihole:"
+sudo borg list /nas/borg_pihole
+echo ""
+
+echo "Petra:"
+sudo borg list /nas/borg_petra
+echo ""
+
+echo "Emily:"
+sudo borg list /nas/borg_emily	
+
+
