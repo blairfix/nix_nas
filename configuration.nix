@@ -46,6 +46,14 @@
     # tailscale
     services.tailscale.enable = true;
 
+    
+    # enable sway window manager
+    programs.sway = {
+	enable = true;
+	wrapperFeatures.gtk = true;
+    };
+
+
     # ssh
     services.openssh = {
 	enable = true;

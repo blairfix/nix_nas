@@ -1,6 +1,19 @@
 { pkgs, ... }: {
     environment.systemPackages = with pkgs;  [ 
 
+	# sway and associated utilities
+	swaybg
+	xwayland
+	brightnessctl
+	gammastep
+	wl-clipboard 
+	wtype
+	sway-launcher-desktop
+	waybar
+
+	# browser
+	firefox
+
 	# terminal 
 	fzf 
 	ripgrep
