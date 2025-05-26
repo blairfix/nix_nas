@@ -9,6 +9,7 @@
 	./nvim.nix
 
 	# timers
+	./timers/raid_health.nix
 	./timers/update.nix
 
 	];
