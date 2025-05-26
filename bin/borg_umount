@@ -2,5 +2,5 @@
 
 
 # unmount 
-echo sudo borg umount  /nas/borg_"$1"
+sudo borg umount  /nas/borg_"$1"
 

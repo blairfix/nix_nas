@@ -2,8 +2,8 @@
 
 
 # make mount point
-echo mkdir /home/blair/borg_"$1"
+mkdir /home/blair/borg_"$1"
 
 # mount
-echo sudo borg mount -f /nas/borg_"$1"
+sudo borg mount -f /nas/borg_"$1"
 
