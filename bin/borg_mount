@@ -5,5 +5,4 @@
 mkdir /home/blair/borg_"$1"
 
 # mount
-sudo borg mount -f /nas/borg_"$1"
-
+sudo borg mount -f /nas/borg_"$1"  /home/blair/borg_"$1"
