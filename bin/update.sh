@@ -7,4 +7,4 @@ nixos-rebuild --upgrade switch
 nix-collect-garbage --delete-older-than 60d
 
 # reboot
-reboot
+#reboot
