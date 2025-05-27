@@ -18,6 +18,7 @@ echo ""
 
 echo "Emily:"
 sudo borg list /nas/borg_emily	
+echo ""
 
 echo BN Archives
 sudo borg list /nas/borg_bnarchives
