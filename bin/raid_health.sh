@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # get raid health
-sudo mdadm --detail /dev/md0 > /home/blair/raid_health.txt
+mdadm --detail /dev/md0 > /home/blair/raid_health.txt
 
 
 # send to blair server
