@@ -8,7 +8,7 @@
 	wantedBy = [ "timers.target" ];
 	timerConfig = {
 	    #OnCalendar = "daily";
-	    OnCalendar= "*-*-* 09:11:00";
+	    OnCalendar= "*-*-* 09:20:00";
 	    Persistent = "true";
 	    Unit = "raid_health.service";
 	};
@@ -23,6 +23,7 @@
 	path = with pkgs; [ 
 	    bash
 	    openssh
+	    mdadm
 	];
 	script = ''
 	    bash /home/blair/bin/raid_health.sh
