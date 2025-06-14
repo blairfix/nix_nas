@@ -47,7 +47,14 @@
     # tailscale
     services.tailscale.enable = true;
 
-    
+    # disable sleep
+    systemd.sleep.extraConfig = ''
+	AllowSuspend=no
+	AllowHibernation=no
+	AllowHybridSleep=no
+	AllowSuspendThenHibernate=no
+	'';
+
     # enable sway window manager
     programs.sway = {
 	enable = true;
