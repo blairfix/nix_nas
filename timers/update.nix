@@ -21,6 +21,8 @@
 
 	path = with pkgs; [ 
 	    bash
+	    nixos-rebuild
+	    nix
 	];
 	script = ''
 	    bash /home/blair/bin/update.sh
