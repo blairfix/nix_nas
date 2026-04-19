@@ -55,19 +55,14 @@
 #	AllowSuspendThenHibernate=no
 #	'';
 
-
-    services.systemd-sleep = {
-	enable = true;
-	    settings = {
-		Sleep = {
-		    AllowSuspend = "no";
-		    AllowHibernation = "no";
-		    AllowHybridSleep = "no";
-		    AllowSuspendThenHibernate = "no";
-		};
-	    };
+    systemd.sleep.settings = {
+	Sleep = {
+	    AllowSuspend = "no";
+	    AllowHibernation = "no";
+	    AllowHybridSleep = "no";
+	    AllowSuspendThenHibernate = "no";
+	};
     };
-
 
     # enable sway window manager
     programs.sway = {
