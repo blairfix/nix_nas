@@ -16,6 +16,10 @@ echo "Petra:"
 sudo borg list /nas/borg_petra
 echo ""
 
+echo "Gamer:"
+sudo borg list /nas/borg_gamer
+echo ""
+
 echo "Emily:"
 sudo borg list /nas/borg_emily	
 echo ""
